@@ -19,7 +19,7 @@ $(function() {
             }
             $.ajax({
                 // url: "././mail/contact_me.php",
-                url: "https://formcarry.com/s/O346U93YpW",
+                url: "https://formcarry.com/s/O346U93YpWD",
                 type: "POST",
                 dataType: "json",
                 data: {
