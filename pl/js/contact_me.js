@@ -19,9 +19,9 @@ $(function() {
             }
             $.ajax({
                 // url: "././mail/contact_me.php",
-                url: "https://cors.io/?https://formcarry.com/s/O346U93YpWD",
+                url: "https://formcarry.com/s/O346U93YpWD",
                 type: "POST",
-                dataType: "json",
+                dataType: "jsonp",
                 data: {
                     name: name,
                     phone: phone,
