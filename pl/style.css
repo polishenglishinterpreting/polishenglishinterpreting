@@ -184,7 +184,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 .navbar-default .navbar-brand {
-    font-family: "Kalam","Helvetica Neue",Helvetica,Arial,cursive;
+    /* font-family: "Kalam","Helvetica Neue",Helvetica,Arial,cursive; */
     /* color: #ed1c24; */
     color: white;
 }
@@ -278,7 +278,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('/pl/img/header-bg1.jpg');
+    background-image: url('/pl/img/0P9A4499.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -442,19 +442,19 @@ section h3.section-subheading {
 }
 
 /* :start */
-#testamonial .portfolio-item {
+#Testimonial .portfolio-item {
     right: 0;
     margin: 0 0 15px;
 }
 
-#testamonial .portfolio-item .portfolio-link {
+#Testimonial .portfolio-item .portfolio-link {
     display: block;
     position: relative;
     margin: 0 auto;
     max-width: 400px;
 }
 
-#testamonial .portfolio-item .portfolio-link .portfolio-hover {
+#Testimonial .portfolio-item .portfolio-link .portfolio-hover {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -466,11 +466,11 @@ section h3.section-subheading {
     background: rgba(237,28,36, .9);
 }
 
-#testamonial .portfolio-item .portfolio-link .portfolio-hover:hover {
+#Testimonial .portfolio-item .portfolio-link .portfolio-hover:hover {
     opacity: 1;
 }
 
-#testamonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+#Testimonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
     position: absolute;
     top: 50%;
     width: 100%;
@@ -481,16 +481,16 @@ section h3.section-subheading {
     color: #fff;
 }
 
-#testamonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+#Testimonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
     margin-top: -12px;
 }
 
-#testamonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
-#testamonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+#Testimonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+#Testimonial .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
     margin: 0;
 }
 
-#testamonial .portfolio-item .portfolio-caption {
+#Testimonial .portfolio-item .portfolio-caption {
     margin: 0 auto;
     padding: 25px;
     max-width: 400px;
@@ -498,24 +498,24 @@ section h3.section-subheading {
     background-color: #fff;
 }
 
-#testamonial .portfolio-item .portfolio-caption h4 {
+#Testimonial .portfolio-item .portfolio-caption h4 {
     margin: 0;
     text-transform: none;
 }
 
-#testamonial .portfolio-item .portfolio-caption p {
+#Testimonial .portfolio-item .portfolio-caption p {
     margin: 0;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
     font-size: 16px;
     font-style: italic;
 }
 
-#testamonial * {
+#Testimonial * {
     z-index: 2;
 }
 
 @media(min-width:767px) {
-    #testamonial .portfolio-item {
+    #Testimonial .portfolio-item {
         margin: 0 0 30px;
     }
 }
@@ -974,5 +974,29 @@ a.lang-selector {
 .lang-selected {
     background-color: #222;
     border-radius: 4px;
+}
+
+.intro-lead-in.splash-logo {
+    text-align: start !important;
+    margin-left: -10px !important;
+}
+
+/* Container holding the image and the text */
+.team-container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* Centered text */
+.team-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.white {
+    color: white;
 }
 
