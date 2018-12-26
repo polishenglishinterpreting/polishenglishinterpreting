@@ -73,6 +73,10 @@ h6 {
     background-color: #f7f7f7;
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .bg-darkest-gray {
     background-color: #222;
 }
@@ -234,8 +238,17 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #ed1c24;
+    background-color: transparent;
 }
+
+.navbar-default .navbar-nav>.active>a::after {
+    border-bottom: 5px solid #ed1c24;
+    bottom: 5px;
+    content: " ";
+    left: 2px;
+    position: absolute;
+    right: 2px;
+  }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
@@ -266,7 +279,8 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #2e3192;
+        /* background-color: #2e3192; */
+        background-color: #2e3192ab
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -286,6 +300,35 @@ header {
     background-size: cover;
     -o-background-size: cover;
 }
+
+.post-header {
+    text-align: center; 
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.post-page-body  {
+    background-image: url("http://localhost:4000/img/squiggle.png"); 
+  }
+
+#about {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('/pl/img/0P9A4479.jpg');
+    background-position: center center;
+    background-repeat: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
 
 header .intro-text {
     padding-top: 100px;
@@ -347,15 +390,29 @@ section h3.section-subheading {
     margin-bottom: 75px;
     text-transform: none;
     font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
-    font-size: 16px;
-    font-style: italic;
+    font-size: 17px;
+    /* font-style: italic; */
     font-weight: 400;
 }
 
+section h3.section-subheading-no-margin {
+    margin-bottom: 15px;
+    text-transform: none;
+    font-family: "Droid Serif", "Helvetica Neue", Helvetica,Arial,sans-serif;
+    font-size: 17px;
+    /* font-style: italic; */
+    font-weight: 400;
+}
+
+
 @media(min-width:768px) {
-    section {
+    section:not(.section-no-padding) {
         padding: 150px 0;
     }
+}
+
+.text-align-centre {
+    text-align: center;
 }
 
 .service-heading {
@@ -366,6 +423,19 @@ section h3.section-subheading {
 #portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
+}
+
+a.portfolio-link {
+    background-color: white;
+    min-height: 260px;
+}
+
+.small-padding {
+    margin-bottom: 20px;
+}
+
+.img-portfolio-thumbnail {
+    height: 100px !important
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -746,16 +816,20 @@ aside.clients img {
     margin: 50px auto;
 }
 
-section#contact {
+/* section#contact {
     background-color: #222;
     background-image: url('/pl/img/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
+} */
+
+img.img-responsive.img-circle {
+    width: 40%;
 }
 
-section#contact .section-heading {
+/* section#contact .section-heading {
     color: #fff;
-}
+} */
 
 section#contact .form-group {
     margin-bottom: 25px;
@@ -971,9 +1045,18 @@ a.lang-selector {
     padding-right: 0px !important;
 }
 
-.lang-selected {
+/* .lang-selected {
     background-color: #222;
     border-radius: 4px;
+} */
+
+.lang-selected::after {
+    border-bottom: 5px solid #ed1c24;
+    bottom: 5px;
+    content: " ";
+    left: 0;
+    position: absolute;
+    right: 0;  
 }
 
 .intro-lead-in.splash-logo {
