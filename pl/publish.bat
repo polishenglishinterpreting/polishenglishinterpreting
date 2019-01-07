@@ -1,3 +1,5 @@
+cd C:\Beata.Website\polishenglishinterpreting
+bundle exec jekyll build
 cd C:\Beata.Website\polishenglishinterpreting\_site
 git init
 git remote add origin https://github.com/polishenglishinterpreting/polishenglishinterpreting.github.io
