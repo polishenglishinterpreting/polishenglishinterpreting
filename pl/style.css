@@ -21,7 +21,7 @@ body {
 .navbar-brand {
     color: white !important;
     text-decoration: none !important;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 /* a.navbar-brand.page-scroll:hover {
