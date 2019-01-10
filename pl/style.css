@@ -238,6 +238,35 @@ fieldset[disabled] .btn-xl.active {
     transition: all ease .35s;
 }
 
+.mobile-default li a {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+    -webkit-transition: all ease .35s;
+    -moz-transition: all ease .35s;
+    transition: all ease .35s;
+}
+
+@media(max-width:767px) {
+    .services-mobile-lang {
+        vertical-align: middle;
+        display: inline-block
+    }
+}
+
+@media(min-width:768px) {
+    .services-mobile-lang {
+        display: none
+    }
+}
+
+ul.nav.navbar-nav.mobile-default li {
+    float: left !important;
+}
+
+
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
